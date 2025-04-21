@@ -3,7 +3,8 @@ name: hello
 on: [push]
 
 jobs:
-    say_hello: Build and Test
+  say_hello:
+    name: Build and Test
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
