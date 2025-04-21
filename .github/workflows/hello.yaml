@@ -1,11 +1,11 @@
-name: hello
+name: hello          # Name of the workflow
 
-on: [push]
+on: [push]           # Triggers when code is pushed to any branch
 
-jobs:
-  say_hello:
-    name: Build and Test
-    runs-on: ubuntu-latest
+jobs:                # Defines jobs to run
+  say_hello:         # Job ID
+    name: Build and Test  # Display name for the job
+    runs-on: ubuntu-latest  # Runs on GitHub's Ubuntu runner
     steps:
-      - name: Checkout code
-        run: echo "Hello IDRISS NADIII"
+      - name: Checkout code   # Step name
+        run: echo "Hello IDRISS NADIII"  # Command to execute
