@@ -1,0 +1,10 @@
+name: Hello
+
+on: [push]
+
+jobs:
+    say_hello: Build and Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        run: echo "Hello IDRISS NADIII"
